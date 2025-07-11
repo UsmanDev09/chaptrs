@@ -11,9 +11,11 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 2. Add the environment variabled 
-``` EXPO_PUBLIC_API_UR=   ```
+```
+   EXPO_PUBLIC_API_UR=
+```
 
-3. Start the app
+4. Start the app
 
    ```bash
    npx expo start
