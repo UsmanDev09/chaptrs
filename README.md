@@ -11,9 +11,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 2. Add the environment variabled 
-```
+   ```
    EXPO_PUBLIC_API_UR=
-```
+   ```
 
 4. Start the app
 
