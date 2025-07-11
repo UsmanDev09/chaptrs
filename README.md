@@ -48,3 +48,34 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+---
+
+## Solution Overview
+
+This application is a simple React Native app built with the Expo managed workflow. It fetches a list of posts from the [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts) public API and displays them in a scrollable list.
+
+### Key Features:
+
+- **Fixed Header**: A non-scrolling header containing the application title.
+- **Scrollable Content**: A list of posts fetched from a remote API. Each list item displays a title and a body.
+- **Fixed Footer**: A non-scrolling footer with a static copyright notice.
+- **Loading & Error States**: The application displays a loading indicator while fetching data and shows a user-friendly error message if the API call fails.
+
+### Project Structure:
+
+- **`app/(tabs)/index.tsx`**: This is the main screen of the application. It contains all the UI and business logic for fetching, displaying, and handling the state of the posts list.
+- **`types/post.ts`**: This file defines the TypeScript interface (`Post`) for the data objects fetched from the API, ensuring type safety.
+- **`app/(tabs)/_layout.tsx`**: This file configures the tab navigator. The application is built into the existing tab-based structure that came with the project template.
+- **`.env`**: This file (which must be created manually) stores the API endpoint URL.
+
+## Assumptions and Limitations
+
+### Assumptions
+
+- The solution was implemented within the existing tab-based navigation structure provided by the initial Expo project template (`app/(tabs)`). The requirements did not specify removing this structure, so I built upon it.
+
+### Limitations
+
+- **No Pull-to-Refresh**: The list of posts is fetched only once when the component mounts. There is no functionality to manually refresh the data.
+- **Basic Styling**: The styling is clean and functional, using React Native's built-in `StyleSheet`. No advanced design or theming has been applied.
